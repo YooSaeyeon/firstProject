@@ -1,7 +1,7 @@
 from django.db import models
-
+# create를 post로 작성함..
 # Create your models here.
-class Post(models.Model):
+class contact(models.Model):
     name = models.CharField(max_length=50, verbose_name='이름')
     email = models.EmailField(max_length=128, verbose_name='이메일')
     number = models.CharField(max_length=20, verbose_name='전화번호')

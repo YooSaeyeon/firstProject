@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>제목: {{etcPost.title}} </h2>
+    <h4>작성 시간: {{etcPost.created_at}} </h4>
+    <hr>
+    <p> {{etcPost.body}} </p>
+    <hr>
+    <a href="{% url 'post_update_e' etcPost.id %}">게시글 수정하기</a>
+    <a href="{% url 'post_delete_e' etcPost.id %}">게시글 삭제하기</a>
+</body>
+</html>

@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Post
+from .models import contact
 # Register your models here.
-admin.site.register(Post)
+admin.site.register(contact)
 
 # class PostInline(admin.TabularInline):
 #     model = Post

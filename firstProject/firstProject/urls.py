@@ -10,5 +10,5 @@ urlpatterns = [
     path('cLanguage/', include('cLanguage.urls'), name='cLanguage'),
     path('javaLanguage/', include('javaLanguage.urls'), name='javaLanguage'),
     path('pythonLanguage/', include('pythonLanguage.urls'), name='pythonLanguage'),
-    path('etchonLanguage/', include('etcLanguage.urls'), name='etcLanguage'),
+    path('etcLanguage/', include('etcLanguage.urls'), name='etcLanguage'),
 ]

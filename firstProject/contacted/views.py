@@ -1,16 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import PostModelForm
 
 # Create your views here.
 def contacted(request):
-    if request.method == 'POST':
+    if request.method == 'CONTACT':
         # 입력 내용을 DB에 저장
-        form = PostModelForm(request.POST)
+        form = PostModelForm(request.contact)
         # 제대로 입력되었는지 검사하는 코드
         if form.is_valid(): 
             # 유효하다면 저장하는 코드
             form.save() 
-            return redirect('home') 
+            return redirect('index') 
     else:
         form = PostModelForm() 
     return render(request, 'contacted.html', {'form':form})
